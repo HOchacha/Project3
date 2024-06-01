@@ -139,18 +139,6 @@ build CMakeFiles/Project3.dir/component/last_branch_prediction/last_branch_predi
   OBJECT_DIR = CMakeFiles\Project3.dir
   OBJECT_FILE_DIR = CMakeFiles\Project3.dir\component\last_branch_prediction
 
-build CMakeFiles/Project3.dir/component/two_bit_predictor/two_bit_predictor.c.obj: C_COMPILER__Project3_unscanned_Debug C$:/Users/user/Desktop/repo/Project3/component/two_bit_predictor/two_bit_predictor.c || cmake_object_order_depends_target_Project3
-  DEP_FILE = CMakeFiles\Project3.dir\component\two_bit_predictor\two_bit_predictor.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Project3.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project3.dir\component\two_bit_predictor
-
-build CMakeFiles/Project3.dir/test_prog/martix_mult/matrix_mult.c.obj: C_COMPILER__Project3_unscanned_Debug C$:/Users/user/Desktop/repo/Project3/test_prog/martix_mult/matrix_mult.c || cmake_object_order_depends_target_Project3
-  DEP_FILE = CMakeFiles\Project3.dir\test_prog\martix_mult\matrix_mult.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Project3.dir
-  OBJECT_FILE_DIR = CMakeFiles\Project3.dir\test_prog\martix_mult
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Project3
@@ -159,7 +147,7 @@ build CMakeFiles/Project3.dir/test_prog/martix_mult/matrix_mult.c.obj: C_COMPILE
 #############################################
 # Link the executable Project3.exe
 
-build Project3.exe: C_EXECUTABLE_LINKER__Project3_Debug CMakeFiles/Project3.dir/main.c.obj CMakeFiles/Project3.dir/component/register/register_impl.c.obj CMakeFiles/Project3.dir/single_cycle/execute/execute_instruction.c.obj CMakeFiles/Project3.dir/single_cycle/fetch/fetch_instruction.c.obj CMakeFiles/Project3.dir/single_cycle/writeback/write_back_instruction.c.obj CMakeFiles/Project3.dir/single_cycle/decode/decode_instruction.c.obj CMakeFiles/Project3.dir/component/control_unit/control_unit.c.obj CMakeFiles/Project3.dir/component/alu/alu.c.obj CMakeFiles/Project3.dir/component/memory/memory.c.obj CMakeFiles/Project3.dir/util/utils.c.obj CMakeFiles/Project3.dir/component/latch/latch.c.obj CMakeFiles/Project3.dir/single_cycle/memory_access/memory_access.c.obj CMakeFiles/Project3.dir/component/forwarding_unit/forwarding_unit.c.obj CMakeFiles/Project3.dir/single_cycle/decode/decode_pipe.c.obj CMakeFiles/Project3.dir/component/last_branch_prediction/last_branch_predictor.c.obj CMakeFiles/Project3.dir/component/two_bit_predictor/two_bit_predictor.c.obj CMakeFiles/Project3.dir/test_prog/martix_mult/matrix_mult.c.obj
+build Project3.exe: C_EXECUTABLE_LINKER__Project3_Debug CMakeFiles/Project3.dir/main.c.obj CMakeFiles/Project3.dir/component/register/register_impl.c.obj CMakeFiles/Project3.dir/single_cycle/execute/execute_instruction.c.obj CMakeFiles/Project3.dir/single_cycle/fetch/fetch_instruction.c.obj CMakeFiles/Project3.dir/single_cycle/writeback/write_back_instruction.c.obj CMakeFiles/Project3.dir/single_cycle/decode/decode_instruction.c.obj CMakeFiles/Project3.dir/component/control_unit/control_unit.c.obj CMakeFiles/Project3.dir/component/alu/alu.c.obj CMakeFiles/Project3.dir/component/memory/memory.c.obj CMakeFiles/Project3.dir/util/utils.c.obj CMakeFiles/Project3.dir/component/latch/latch.c.obj CMakeFiles/Project3.dir/single_cycle/memory_access/memory_access.c.obj CMakeFiles/Project3.dir/component/forwarding_unit/forwarding_unit.c.obj CMakeFiles/Project3.dir/single_cycle/decode/decode_pipe.c.obj CMakeFiles/Project3.dir/component/last_branch_prediction/last_branch_predictor.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Project3.dir

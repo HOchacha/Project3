@@ -1,12 +1,12 @@
 # ninja log v5
-5	83	7389235146494163	CMakeFiles/Project3.dir/component/control_unit/control_unit.c.obj	5a1bb4fe02c13a74
 5	103	7389229658491615	CMakeFiles/Project3.dir/component/alu/alu.c.obj	91c1443b4aa1e656
+5	83	7389235146494163	CMakeFiles/Project3.dir/component/control_unit/control_unit.c.obj	5a1bb4fe02c13a74
 6	119	7389235914340516	CMakeFiles/Project3.dir/main.c.obj	b673b833ae331306
 74	193	7386928855269717	CMakeFiles/Project3.dir/util/utils.c.obj	865b132b5e8dbe95
-63	185	7386936264489963	CMakeFiles/Project3.dir/component/memory/memory.c.obj	a3df497b6995ac8d
 15	156	7389226202787672	CMakeFiles/Project3.dir/single_cycle/execute/execute_instruction.c.obj	96d1d30b008013a3
-54	224	7389143017495912	CMakeFiles/Project3.dir/single_cycle/decode/decode_instruction.c.obj	934215b61792ff3c
+63	185	7386936264489963	CMakeFiles/Project3.dir/component/memory/memory.c.obj	a3df497b6995ac8d
 24	151	7389226202731806	CMakeFiles/Project3.dir/single_cycle/fetch/fetch_instruction.c.obj	af1ad93e5519005c
+54	224	7389143017495912	CMakeFiles/Project3.dir/single_cycle/decode/decode_instruction.c.obj	934215b61792ff3c
 14	100	7387796105846135	CMakeFiles/Project3.dir/component/forwarding_unit/forwarding_unit.c.obj	1bf5f95c04590d3c
 43	208	7389143017327552	CMakeFiles/Project3.dir/single_cycle/writeback/write_back_instruction.c.obj	393e0d1c29008b57
 65	234	7389143017596274	CMakeFiles/Project3.dir/component/latch/latch.c.obj	dd8d99b3a0fbc88b
@@ -14,6 +14,8 @@
 87	245	7389143017713108	CMakeFiles/Project3.dir/single_cycle/memory_access/memory_access.c.obj	984d6b0f51f140a2
 24	192	7389143017135921	CMakeFiles/Project3.dir/component/register/register_impl.c.obj	4b06bfcd76faa37a
 119	280	7389235915923811	Project3.exe	204aa1771b2e1234
-2	228	7389285207769948	build.ninja	5c5d16c65d2d46f2
+2	228	7389306008948700	build.ninja	5c5d16c65d2d46f2
 35	162	7389226202852706	CMakeFiles/Project3.dir/component/last_branch_prediction/last_branch_predictor.c.obj	276d4268afb6f129
 44	122	7389226202449315	CMakeFiles/Project3.dir/component/two_bit_predictor/two_bit_predictor.c.obj	c1f16e234debd580
+3	979	7389306008948700	build.ninja	5c5d16c65d2d46f2
+14	798	7389306019158588	Project3.exe	a907cfdcc2afb13e
