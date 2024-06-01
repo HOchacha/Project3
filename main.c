@@ -95,6 +95,20 @@ int main(int arg, char* args[]) {
 
         uint32_t current_wb_pc = write_back_pipe(conditional_latch_out_MEM_WB(&mem_wb_latch));
 
+// execute instruction & Branch Arithmetic Operation
+// Branch and Jump Address Processing
+
+        EX_MEM_SLOT ex_mem_slot = execute_instruction_pipe(conditional_latch_out_ID_EX(&id_ex_latch),
+                                                           conditional_latch_out_EX_MEM(&ex_mem_latch),
+                                                           conditional_latch_out_MEM_WB(&mem_wb_latch),
+                                                           &if_id_latch,
+                                                           &id_ex_latch,
+                                                           &TERMINATION,
+                                                           &btb);
+
+        //PIPELINE EX LATCH ACCESS
+        push_EX_MEM_LATCH(&ex_mem_latch, ex_mem_slot);
+
 // fetch instruction
 
         IF_ID_SLOT if_id_slot = fetch_instruction_pipe(PC, TERMINATION, &btb);
@@ -111,19 +125,7 @@ int main(int arg, char* args[]) {
         push_ID_EX_LATCH(&id_ex_latch, id_ex_slot);
 
 
-// execute instruction & Branch Arithmetic Operation
-// Branch and Jump Address Processing
 
-        EX_MEM_SLOT ex_mem_slot = execute_instruction_pipe(conditional_latch_out_ID_EX(&id_ex_latch),
-                                                           conditional_latch_out_EX_MEM(&ex_mem_latch),
-                                                           conditional_latch_out_MEM_WB(&mem_wb_latch),
-                                                           &if_id_latch,
-                                                           &id_ex_latch,
-                                                           &TERMINATION,
-                                                           &btb);
-
-        //PIPELINE EX LATCH ACCESS
-        push_EX_MEM_LATCH(&ex_mem_latch, ex_mem_slot);
 
 // access memory
 
@@ -164,6 +166,7 @@ int main(int arg, char* args[]) {
     // prolog: print out all the information
     printf("=============result: repr in decimal=================\n");
     printf("%-40s: %6d\n","Final return Value register[v0]", general_reg.reg[2]);
+    printf("%-40s: %6d\n", "Number of cycles", number_of_cycle);
     printf("%-40s: %6d\n", "Number of executed instructions", number_of_instructions);
     printf("%-40s: %6d\n", "Number of executed R-type", number_R_type);
     printf("%-40s: %6d\n", "Number of executed I-type", number_I_type);

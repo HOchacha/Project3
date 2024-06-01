@@ -12,7 +12,7 @@
 
 typedef struct _branch_target_buffer_slot{
     uint32_t branch_inst_addr;
-    uint32_t is_branch;
+    uint32_t is_branch; // this field has 32 bits, but work as 1bit.
     uint32_t branch_target_addr;
 }BTB_slot;
 

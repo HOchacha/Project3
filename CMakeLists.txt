@@ -32,4 +32,8 @@ add_executable(Project3 main.c
         single_cycle/decode/decode_pipe.c
         component/last_branch_prediction/last_branch_predictor.c
         component/last_branch_prediction/last_branch_predictor.h
+        component/two_bit_predictor/two_bit_predictor.h
+        component/two_bit_predictor/two_bit_predictor.c
+        component/two_bit_predictor/two_bit_predictor.h
+        test_prog/martix_mult/matrix_mult.c
 )
